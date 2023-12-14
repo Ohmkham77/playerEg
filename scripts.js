@@ -196,3 +196,9 @@ function SetControlsInPlayFullMode() {
 
     window.libjass_ass = vjs_ass;
 }(window.libjass));
+
+window.addEventListener("DOMContentLoaded", () => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.open("videoplayer.html");
+    }
+});
